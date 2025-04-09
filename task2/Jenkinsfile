@@ -4,37 +4,29 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                dir('task') {
-                    echo 'Building Python app'
-                    sh 'ls -la'
-                }
+                echo 'Building Python app'
+                sh 'ls -la'
             }
         }
 
         stage('Install Dependencies') {
             steps {
-                dir('task') {
-                    echo 'Installing dependencies (if any)...'
-                    sh 'pip install -r requirements.txt || true'
-                }
+                echo 'Installing dependencies (if any)...'
+                sh 'pip install -r requirements.txt || true'
             }
         }
 
         stage('Docker Build') {
             steps {
-                dir('task') {
-                    echo 'Building Docker image...'
-                    sh 'docker build -t python-jenkins-app .'
-                }
+                echo 'Building Docker image...'
+                sh 'docker build -t python-jenkins-app .'
             }
         }
 
         stage('Run Docker Container') {
             steps {
-                dir('task') {
-                    echo 'Running Python app inside Docker...'
-                    sh 'docker run --rm python-jenkins-app'
-                }
+                echo 'Running Python app inside Docker...'
+                sh 'docker run --rm python-jenkins-app'
             }
         }
     }
