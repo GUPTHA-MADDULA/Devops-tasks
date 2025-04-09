@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building Python app'
+                sh 'ls -la'
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                echo 'Installing dependencies (if any)...'
+                sh 'pip install -r requirements.txt || true'
+            }
+        }
+
+        stage('Docker Build') {
+            steps {
+                echo 'Building Docker image...'
+                sh 'docker build -t python-jenkins-app .'
+            }
+        }
+
+        stage('Run Docker Container') {
+            steps {
+                echo 'Running Python app inside Docker...'
+                sh 'docker run --rm python-jenkins-app'
+            }
+        }
+    }
+}
