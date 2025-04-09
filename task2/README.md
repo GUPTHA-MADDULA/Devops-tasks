@@ -1,24 +1,40 @@
 # Python App CI/CD with Jenkins and Docker
 
-This project demonstrates how to set up a CI/CD pipeline for a Python application using Jenkins and Docker. The Jenkins pipeline is configured to build, test, and run the app inside a Docker container.
+This project demonstrates how to set up a CI/CD pipeline using Jenkins and Docker to build and run a simple Python application.
 
-## 📁 Project Layout
+## Project Structure
 
-All project files are placed inside the `task/` directory:
-- `task/` contains the source code, `Dockerfile`, `Jenkinsfile`, and other dependencies.
+All the project files are inside the `task/` folder:
+- `simple-app.py`: Python app entry point
+- `Dockerfile`: Used to build the Docker image
+- `requirements.txt`: Python dependencies
+- `Jenkinsfile`: Jenkins pipeline script
 
-## 🚀 What It Does
+## How It Works
 
-- Pulls the code from GitHub
+- Jenkins pulls code from GitHub
 - Installs Python dependencies
-- Builds a Docker image for the Python app
-- Runs the app in a Docker container
-- Uses Jenkins Pipeline on an AWS EC2 instance
+- Builds a Docker image
+- Runs the application inside a Docker container
 
-## ✅ Requirements
+## Requirements
 
-- AWS EC2 instance (Ubuntu recommended)
-- Docker installed and running
-- Jenkins installed and configured
-- GitHub repository with your project
+- AWS EC2 instance (Ubuntu)
+- Jenkins installed and running
+- Docker installed and configured
+- Jenkins user added to Docker group
+- Port 8080 open in EC2 security group
+
+## Access Jenkins
+
+1. Open `http://<EC2_PUBLIC_IP>:8080` in your browser
+2. Get the initial password:
+   ```bash
+   sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+## Jenkins Setup
+--Create a new Pipeline job
+--Choose "Pipeline script from SCM"
+--Use your GitHub repo URL
+--Set the script path to (task/Jenkinsfile)
 
