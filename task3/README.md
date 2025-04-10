@@ -25,11 +25,13 @@ Provision a local Docker container running Nginx using Terraform.
 - Apply the Terraform configuration:
 `terraform apply -auto-approve`
 
+![Terrform creating is completed](./pictures/output%201.png)
 
 - Verify the container:
 - Run `docker ps` to check the container status
 - Open `http://localhost:8080` in a browser to confirm Nginx is running
-`terraform state list`
+
+![Server is running](./pictures/output%202.png)
 
 - Check Terraform-managed resources:
 `terraform destroy -auto-approve`
