@@ -26,9 +26,9 @@ The goal is to:
 
 ---
 ##  Connect with Me
-- Mail: [@Connect](ramakrishanguptha2004@gmail.com)
+- Mail: [@ramakrishanguptha2004@gmail.com]
 - GitHub: [@guptha-maddula](https://github.com/GUPTHA-MADDULA)
-- LinkedIn: [@guptha-mmaddula](https://www.linkedin.com/in/guptha-maddula)
+- LinkedIn: [@guptha-maddula](https://www.linkedin.com/in/guptha-maddula)
 
 ---
 
