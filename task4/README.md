@@ -64,7 +64,7 @@ resource "docker_container" "nginx_container" {
 - Confirmation of your Server is running of your desired port:
 
 ## Nginx server is running
-![Terrform creating is completed](./pictures/output%201.png)
+![Server is Running Successfully](./pictures/output%202.png)
 
 
 ## To Destroy Terrafrom infrastructure

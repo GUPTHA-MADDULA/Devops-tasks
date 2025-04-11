@@ -31,3 +31,14 @@ Provision a local Docker container running Nginx using Terraform.
 `terraform destroy -auto-approve`
 
 ---
+
+---
+
+## Learnings
+
+- Learned to provision Docker containers using Terraform with the Docker provider.  
+- Understood key Terraform commands like `init`, `plan`, `apply`, and `destroy`.  
+- Gained hands-on experience writing and executing Terraform configurations.  
+- Verified Nginx deployment by accessing it through `http://localhost:8080`.  
+
+---
