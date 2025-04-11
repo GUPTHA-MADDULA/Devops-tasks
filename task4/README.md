@@ -42,7 +42,7 @@ resource "docker_container" "nginx_container" {
   }
 }
 
----
+
  Commands to Run
 
 Initialize Terraform: `terraform init`
@@ -50,7 +50,7 @@ Initialize Terraform: `terraform init`
 View the execution plan: `terraform plan`
 Apply the configuration: `terraform apply -auto-approve`
 
----
+
 
  Access Nginx
 
@@ -58,7 +58,11 @@ Once deployed, open your browser and go to:
 http://localhost:8080
 You should see the Nginx welcome page.
 
----
  To Destroy
 Clean up all Terraform-managed resources:
 `terraform destroy -auto-approve`
+
+![Terrform creating is completed](./pictures/output%201.png)
+
+## Nginx server is running
+![Terrform creating is completed](./pictures/output%201.png)
