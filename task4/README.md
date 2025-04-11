@@ -1,4 +1,4 @@
-# 🚀 Terraform Docker Nginx Setup
+# Terraform Docker Nginx Setup
 
 This project uses **Terraform** and the **Docker Desktop** to spin up a simple **Nginx** web server container.
 
@@ -6,14 +6,6 @@ This project uses **Terraform** and the **Docker Desktop** to spin up a simple *
 
 - [Docker](https://docs.docker.com/get-docker/) installed and running
 - [Terraform](https://developer.hashicorp.com/terraform/downloads) installed
-
-##  Project Structure
-
-task3/ 
- ├── main.tf 
- ├── terraform.lock.hcl 
- ├── terraform.tfstate 
-      └── terraform.tfstate.backup
 
       
 ##  What It Does
@@ -41,28 +33,56 @@ resource "docker_container" "nginx_container" {
     external = 8080
   }
 }
+```
 
+## Terraform Initialization Setup
 
- Commands to Run
+- Steps to Run Terrafrom Environment
 
-Initialize Terraform: `terraform init`
+- Initialize Terraform: `terraform init`
 
-View the execution plan: `terraform plan`
-Apply the configuration: `terraform apply -auto-approve`
+- View the execution plan: `terraform plan`
 
+- Apply the configuration: `terraform apply -auto-approve`
 
-
- Access Nginx
-
-Once deployed, open your browser and go to:
-http://localhost:8080
-You should see the Nginx welcome page.
-
- To Destroy
-Clean up all Terraform-managed resources:
-`terraform destroy -auto-approve`
 
 ![Terrform creating is completed](./pictures/output%201.png)
+
+
+## Docker-Desktop Setup
+
+- Ensure keep your Docker-Desktop is running while creating this infrastructure.
+- Also pre-login to your Docker registry to run the containers
+- When completing the **Terraform configuration** with **Dockerfile** then automatically created the dockerimage and running **docker container**
+
+
+## Access Nginx
+
+- Once deployed, open your browser and go to:
+ http://localhost:8080
+
+- Confirmation of your Server is running of your desired port:
 
 ## Nginx server is running
 ![Terrform creating is completed](./pictures/output%201.png)
+
+
+## To Destroy Terrafrom infrastructure
+
+- Clean up all Terraform-managed resources:
+`terraform destroy -auto-approve`
+
+## Learnings By Implementing this:
+
+---
+
+## Learnings
+
+- Learned to provision Docker containers using Terraform with the Docker provider.  
+- Understood key Terraform commands like `init`, `plan`, `apply`, and `destroy`.  
+- Gained hands-on experience writing and executing Terraform configurations.  
+- Verified Nginx deployment by accessing it through `http://localhost:8080`.  
+
+---
+
+

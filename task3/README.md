@@ -1,5 +1,3 @@
-# Task 3: Infrastructure as Code (IaC) with Terraform
-
 ## Objective
 Provision a local Docker container running Nginx using Terraform.
 
@@ -10,8 +8,6 @@ Provision a local Docker container running Nginx using Terraform.
 ## Deliverables
 - main.tf (Terraform configuration)
 - Execution logs
-- Screenshot of the running container
-
 ---
 
 ## Steps to Execute
@@ -33,16 +29,5 @@ Provision a local Docker container running Nginx using Terraform.
 
 - Check Terraform-managed resources:
 `terraform destroy -auto-approve`
-
----
-
----
-
-## Learnings
-
-- Learned to provision Docker containers using Terraform with the Docker provider.  
-- Understood key Terraform commands like `init`, `plan`, `apply`, and `destroy`.  
-- Gained hands-on experience writing and executing Terraform configurations.  
-- Verified Nginx deployment by accessing it through `http://localhost:8080`.  
 
 ---
