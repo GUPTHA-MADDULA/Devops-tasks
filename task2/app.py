@@ -1,2 +1,2 @@
-# simple python code
+# simple hello world
 print("Hello from Python") 
