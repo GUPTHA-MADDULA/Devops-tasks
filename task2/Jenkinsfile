@@ -8,7 +8,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/guptha-maddula/Devops-tasks/tree/main/task2'  // Update this URL
+                git 'https://github.com/guptha-maddula/Devops-tasks/tree/main/task2
+' // Update this URL
             }
         }
 
