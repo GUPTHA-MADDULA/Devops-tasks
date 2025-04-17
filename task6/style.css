@@ -1,0 +1,33 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+h1 {
+    color: #3498db;
+    font-size: 2.5rem;
+}
+
+/* Paragraph Styling */
+p {
+    color: #2c3e50;
+    font-size: 1.2rem;
+}
+
+/* Button Styling */
+.btn-custom {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn-custom:hover {
+    background-color: #2980b9;
+}
