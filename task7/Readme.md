@@ -21,6 +21,7 @@ You can run the Netdata container using the following command:
 ```bash
 docker run -d --name=netdata -p 19999:19999 --cap-add SYS_PTRACE --security-opt apparmor=unconfined -e CLOUD_DISABLE=true netdata/netdata
 ```
+![Docker container Running State](./pictures/Screenshot%202025-04-17%20215852.png)
 
 ### Explanation of the command:
 - `docker run -d`: Run the container in detached mode (in the background).
